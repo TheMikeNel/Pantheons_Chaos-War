@@ -7,6 +7,7 @@ public class GameUI : MonoBehaviour
     [SerializeField] private Text wavesCounter;
     [SerializeField] private Image playerHealthBar;
     [SerializeField] private Image playerBlockStaminaBar;
+    [SerializeField] private Image playerUltimateChargeBar;
 
     private int _currentEnemies = 0;
 
@@ -34,11 +35,13 @@ public class GameUI : MonoBehaviour
     {
         set
         {
-            if (value != null) 
+            if (value != null)
+            {
                 playerBlockStaminaBar.fillAmount = value.BlockStamina / value.maxBlockStamina;
+                playerUltimateChargeBar.fillAmount = value.UltimateCharge / value.ultimateRechargingTime;
+            }
         }
     }
-
 
     public void UpdatePlayerHealth(Health playerHealth)
     {
@@ -47,7 +50,10 @@ public class GameUI : MonoBehaviour
 
     public void UpdatePlayerBattleSystem(PlayerBattleSystem pBS)
     {
-        if (pBS) PlayerBattleSystem = pBS;
+        if (pBS)
+        {
+            PlayerBattleSystem = pBS;
+        }
     }
 
     public void SetWaveAndMaxEnemiesCounts(int wave, int enems)

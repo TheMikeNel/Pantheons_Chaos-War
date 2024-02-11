@@ -73,6 +73,7 @@ AudioMixerController:
     - 7864266700644a04fa05b98a68727d84
     - 9756deb5833094f4693885deddf4323c
     - 685dbacead8d3c54695cc8a72914397c
+    - 598795160f06e2146b86bf5a273d17b3
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -88,6 +89,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: -4592870215649593110}
   - {fileID: -7370106773331074562}
+  - {fileID: 4882813499392576466}
   m_Volume: a2ac1259551d4d748ad78e6565eb9de1
   m_Pitch: a1bfc2245ceb52943826d0a07549f09c
   m_Send: 00000000000000000000000000000000
@@ -124,6 +126,25 @@ AudioMixerSnapshotController:
     39f38dd26e93c3e4fabc1b20a1992d31: -12
     309f05fa0f2f5fe45adba716d64025bb: -8
   m_TransitionOverrides: {}
+--- !u!243 &4882813499392576466
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OtherEvents
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 598795160f06e2146b86bf5a273d17b3
+  m_Children: []
+  m_Volume: d914d3c34557fe045866f226dafe56f1
+  m_Pitch: f6d8bdb4888741445bb82d9dd47a5d97
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 5649206805316301985}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &4903369880474373654
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -134,6 +155,20 @@ AudioMixerEffectController:
   m_EffectID: 14cf01be8a46fea4d95cbf3c965c87c8
   m_EffectName: Attenuation
   m_MixLevel: e06ca8c21b7f82347a46fccf0afa9b43
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &5649206805316301985
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 862fbddf351d7b2459ebd87d4db735f8
+  m_EffectName: Attenuation
+  m_MixLevel: d2e06a4c0abfb054ea9e7c14b27708a8
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0

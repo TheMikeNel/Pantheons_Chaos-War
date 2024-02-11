@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136221988670837729}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.025654286, y: -0.58524907, z: 0.37830502, w: 0.71673614}
+  m_LocalRotation: {x: -0.025654286, y: -0.5852491, z: 0.37830508, w: 0.71673614}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -331,7 +331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3478548078717431824}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00039803982, y: -0.571121, z: 0.39931446, w: 0.71719503}
+  m_LocalRotation: {x: 0.00039805472, y: -0.571121, z: 0.39931446, w: 0.71719503}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -722,7 +722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6164275785858882225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.012647405, y: -0.57828975, z: 0.38886, w: 0.71708363}
+  m_LocalRotation: {x: -0.01264742, y: -0.57828975, z: 0.38886, w: 0.7170837}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMultiplier: 1
   _weaponAnchor: {fileID: 517498074258633456}
-  _startWeaponPrefab: {fileID: 1280412484164002224, guid: 66b7c4be3ac578b49a67a68481fbf7f2, type: 3}
+  _weaponPrefab: {fileID: 1280412484164002224, guid: 66b7c4be3ac578b49a67a68481fbf7f2, type: 3}
   _attackCenter: {fileID: 9008231221471304068}
   _maxAttackCombo: 3
   _resetComboByTime: 1
@@ -1851,6 +1851,9 @@ MonoBehaviour:
   _moveSpeedInAttack: 1
   _moveSpeedInAirAttack: 2
   _moveSpeedInBlock: 1
+  ultimateObject: {fileID: 6132345253540069265, guid: 7762223005b76114597230a9d40773af, type: 3}
+  ultimateRechargingTime: 15
+  ultimateDuration: 10
 --- !u!114 &8187995982121200060
 MonoBehaviour:
   m_ObjectHideFlags: 0
