@@ -4878,6 +4878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  autosetTargetAsPlayer: 1
+  playerTag: Player
   smoothCurve:
     serializedVersion: 2
     m_Curve:
@@ -4919,7 +4921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d330328016568340bc82640e04012de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   damageDelay: 1
   distance: 5
   maxEnemiesInRange: 16

@@ -581,6 +581,9 @@ MonoBehaviour:
   PlayerIsDead:
     m_PersistentCalls:
       m_Calls: []
+  LevelComplete:
+    m_PersistentCalls:
+      m_Calls: []
   GodOfPlayerIsChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1726,19 +1729,19 @@ PrefabInstance:
       objectReference: {fileID: 1280412484164002224, guid: 66b7c4be3ac578b49a67a68481fbf7f2, type: 3}
     - target: {fileID: 2763020227992012640, guid: 1c4bbec410f94f64c903bdd6cef6da95, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.71719486
+      value: 0.7171948
       objectReference: {fileID: 0}
     - target: {fileID: 2763020227992012640, guid: 1c4bbec410f94f64c903bdd6cef6da95, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00039806962
+      value: 0.00039805472
       objectReference: {fileID: 0}
     - target: {fileID: 2763020227992012640, guid: 1c4bbec410f94f64c903bdd6cef6da95, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.57112116
+      value: -0.5711211
       objectReference: {fileID: 0}
     - target: {fileID: 2763020227992012640, guid: 1c4bbec410f94f64c903bdd6cef6da95, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.39931455
+      value: 0.39931458
       objectReference: {fileID: 0}
     - target: {fileID: 3408967558800978244, guid: 1c4bbec410f94f64c903bdd6cef6da95, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1852,6 +1855,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2600479593051395473, guid: f5713b38433714249980bae199d71274, type: 3}
+      propertyPath: m_Text
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3437060127409694621, guid: f5713b38433714249980bae199d71274, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.43362755
@@ -1930,15 +1937,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6104490131398695840, guid: f5713b38433714249980bae199d71274, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.4062442
+      value: 0.15985046
       objectReference: {fileID: 0}
     - target: {fileID: 6104490131398695840, guid: f5713b38433714249980bae199d71274, type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.8020475
+      value: 0.49804738
       objectReference: {fileID: 0}
     - target: {fileID: 6104490131398695840, guid: f5713b38433714249980bae199d71274, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.87169814
+      value: 0.5924529
       objectReference: {fileID: 0}
     - target: {fileID: 7054822818694190550, guid: f5713b38433714249980bae199d71274, type: 3}
       propertyPath: m_LocalPosition.y

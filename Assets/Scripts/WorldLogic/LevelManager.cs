@@ -77,9 +77,10 @@ public class LevelManagerScript : MonoBehaviour
             }
 
             EventBus.Instance.WaveAndEnemiesCountChanged?.Invoke(_currentWave, _maxEnemCountOnWave);
-            
+
             StartCoroutine(EnemySpawner());
         }
+        else EventBus.Instance.LevelComplete?.Invoke();
     }
 
     private IEnumerator EnemySpawner()

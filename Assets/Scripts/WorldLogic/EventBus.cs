@@ -10,6 +10,7 @@ public class EventBus : MonoBehaviour
     public UnityEvent<Health> PlayerHealthHasChanges;
     public UnityEvent<PlayerBattleSystem> PlayerBattleSystemHasChanges;
     public UnityEvent PlayerIsDead;
+    public UnityEvent LevelComplete;
 
     [Header("Choice Events")]
     public UnityEvent<Sprite> GodOfPlayerIsChanged; // Skill image
