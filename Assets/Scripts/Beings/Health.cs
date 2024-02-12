@@ -105,7 +105,7 @@ public class Health : MonoBehaviour
         _isDead = true;
 
         //Disable States
-        if (gameObject.TryGetComponent(out ThirdPersonController tpc) && TryGetComponent(out PlayerBattleSystem battleSys))
+        if (gameObject.TryGetComponent(out PlayerControl tpc) && TryGetComponent(out PlayerBattleSystem battleSys))
         {
             tpc.enabled = false; battleSys.enabled = false;
         }

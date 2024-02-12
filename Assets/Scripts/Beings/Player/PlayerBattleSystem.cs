@@ -32,7 +32,7 @@ public class PlayerBattleSystem : MonoBehaviour
 
     //Components
     private Animator _anim;
-    private ThirdPersonController _TPC;
+    private PlayerControl _TPC;
     private GameObject _weaponObject;
     private Weapon _weapon;
 
@@ -122,7 +122,7 @@ public class PlayerBattleSystem : MonoBehaviour
     void Start()
     {
         _anim = GetComponent<Animator>();
-        _TPC = GetComponent<ThirdPersonController>();
+        _TPC = GetComponent<PlayerControl>();
         _tempSpeed = _TPC.MoveSpeed;
         _tempSprint = _TPC.SprintSpeed;
 

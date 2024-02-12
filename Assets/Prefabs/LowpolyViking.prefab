@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMultiplier: 1
   _weaponAnchor: {fileID: 517498074258633456}
-  _weaponPrefab: {fileID: 1280412484164002224, guid: 66b7c4be3ac578b49a67a68481fbf7f2, type: 3}
+  _startWeaponPrefab: {fileID: 1280412484164002224, guid: 66b7c4be3ac578b49a67a68481fbf7f2, type: 3}
   _attackCenter: {fileID: 9008231221471304068}
   _maxAttackCombo: 3
   _resetComboByTime: 1
