@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136221988670837729}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.025654286, y: -0.5852491, z: 0.37830508, w: 0.71673614}
+  m_LocalRotation: {x: 0.014596848, y: 0.7667097, z: -0.4956004, w: -0.4078276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -331,7 +331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3478548078717431824}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00039805472, y: -0.571121, z: 0.39931446, w: 0.71719503}
+  m_LocalRotation: {x: -0.00022710857, y: 0.7482011, z: -0.52312404, w: -0.40808865}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -419,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 5046585281249873394}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30008373, y: 0.012872223, z: -0.004050987, w: 0.9538174}
-  m_LocalPosition: {x: 3.99379, y: 4.5, z: -0.22281122}
+  m_LocalPosition: {x: 3.0513988, y: 4.5, z: 2.5863032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -481,7 +481,7 @@ MonoBehaviour:
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
-    m_InputAxisValue: 0
+    m_InputAxisValue: -0.1
     m_InvertInput: 1
     m_MinValue: 0
     m_MaxValue: 1
@@ -722,7 +722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6164275785858882225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.01264742, y: -0.57828975, z: 0.38886, w: 0.7170837}
+  m_LocalRotation: {x: 0.0071958527, y: 0.7575927, z: -0.50942814, w: -0.40802526}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2147,8 +2147,8 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   analogMovement: 0
-  cursorLocked: 1
-  cursorInputForLook: 1
+  cursorLocked: 0
+  cursorInputForLook: 0
 --- !u!4 &3963377587162024921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5370469705986335153, guid: adde1d82326582c4da481129ca773acc, type: 3}

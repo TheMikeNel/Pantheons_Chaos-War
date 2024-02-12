@@ -119,6 +119,7 @@ public class PlayerBattleSystem : MonoBehaviour
     private float _tempSpeed;
     private float _tempSprint;
 
+    //Main methods
     void Start()
     {
         _anim = GetComponent<Animator>();
@@ -140,21 +141,21 @@ public class PlayerBattleSystem : MonoBehaviour
         if (!InBlock && Input.GetMouseButtonUp(0))
         {
             if (AttackCombo < _maxAttackCombo) AttackCombo++;
-            StopAllCoroutines();
+            StopCoroutine(ResetComboTimer());
             StartCoroutine(ResetComboTimer());
         }
     }
 
-    private void SkillsSystem()
+    //Coroutines
+    private IEnumerator ResetComboTimer()
     {
-        if (_canUltimate && ultimateObject && Input.GetKeyDown(KeyCode.R))
-        {
-            _canUltimate = false;
-            _tempUltimateObj = Instantiate(ultimateObject, transform.position, Quaternion.identity);
-            StartCoroutine(UltimateWorking());
-        }
-        UltimateCharging();
+        PlayerInAttack(true);
+
+        yield return new WaitForSeconds(_resetComboByTime);
+        AttackCombo = 0;
+        PlayerInAttack(false);
     }
+
 
     private IEnumerator UltimateWorking()
     {
@@ -164,6 +165,18 @@ public class PlayerBattleSystem : MonoBehaviour
 
         Destroy(_tempUltimateObj);
         UltimateCharge = 0f;
+    }
+
+    //Methods
+    private void SkillsSystem()
+    {
+        if (_canUltimate && ultimateObject && Input.GetKeyDown(KeyCode.R))
+        {
+            _canUltimate = false;
+            _tempUltimateObj = Instantiate(ultimateObject, transform.position, Quaternion.identity);
+            StartCoroutine(UltimateWorking());
+        }
+        UltimateCharging();
     }
 
     private void UltimateCharging()
@@ -187,7 +200,7 @@ public class PlayerBattleSystem : MonoBehaviour
             if (AttackCombo > 0)
             {
                 AttackCombo = 0;
-                StopAllCoroutines();
+                StopCoroutine(ResetComboTimer());
             }
 
             InBlock = true;
@@ -205,14 +218,6 @@ public class PlayerBattleSystem : MonoBehaviour
         if (!InBlock) BlockingStaminaRecovery();
     }
 
-    private IEnumerator ResetComboTimer()
-    {
-        PlayerInAttack(true);
-
-        yield return new WaitForSeconds(_resetComboByTime);
-        AttackCombo = 0;
-        PlayerInAttack(false);
-    }
 
     private void PlayerInAttack(bool isAttack)
     {
